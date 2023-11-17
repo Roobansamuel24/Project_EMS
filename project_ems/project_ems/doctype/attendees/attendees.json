@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name}-{last_name}-{phone_number}",
+ "creation": "2023-11-16 11:06:23.925230",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_mrsl",
+  "column_break_olgm",
+  "first_name",
+  "last_name",
+  "phone_number",
+  "column_break_atmi",
+  "gender",
+  "age",
+  "email",
+  "section_break_tjin",
+  "address",
+  "column_break_izoi",
+  "event_name",
+  "section_break_mveq",
+  "category",
+  "column_break_shle",
+  "accomodation",
+  "section_break_cddl",
+  "photo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_mrsl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "column_break_olgm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_atmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email "
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "section_break_tjin",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_izoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mveq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Normal\nVIP"
+  },
+  {
+   "fieldname": "column_break_shle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accomodation",
+   "fieldtype": "Select",
+   "label": "Accomodation required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "section_break_cddl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendees",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 12:41:23.571368",
+ "modified_by": "Administrator",
+ "module": "Project EMS",
+ "name": "Attendees",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

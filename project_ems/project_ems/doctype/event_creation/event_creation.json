@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{event_name}",
+ "creation": "2023-11-16 21:00:29.166211",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_y1hz",
+  "event_details_column",
+  "event_name",
+  "event_date",
+  "start_time",
+  "end_time",
+  "event_description",
+  "column_break_quho",
+  "venue_location",
+  "venue_capacity",
+  "venue_address",
+  "chief_guest_details_section",
+  "chief_guests",
+  "sponsor_details_section",
+  "sponsors",
+  "other_event_details_section",
+  "volunteers_required",
+  "column_break_lvwy",
+  "event_brochure",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_y1hz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event name",
+   "options": "Event creation",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "column_break_quho",
+   "fieldtype": "Column Break",
+   "label": "Venue details"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start time",
+   "options": "Event creation",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End time"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event date"
+  },
+  {
+   "fieldname": "event_details_column",
+   "fieldtype": "Column Break",
+   "label": "Event details"
+  },
+  {
+   "fieldname": "event_description",
+   "fieldtype": "Small Text",
+   "label": "Event description"
+  },
+  {
+   "fieldname": "venue_capacity",
+   "fieldtype": "Int",
+   "label": "Venue capacity"
+  },
+  {
+   "fieldname": "venue_location",
+   "fieldtype": "Data",
+   "label": "Venue location"
+  },
+  {
+   "fieldname": "venue_address",
+   "fieldtype": "Small Text",
+   "label": "Venue address"
+  },
+  {
+   "fieldname": "chief_guest_details_section",
+   "fieldtype": "Section Break",
+   "label": "Chief Guest details"
+  },
+  {
+   "fieldname": "chief_guests",
+   "fieldtype": "Table",
+   "label": "Chief Guests",
+   "options": "Chief guest"
+  },
+  {
+   "fieldname": "sponsor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sponsor details"
+  },
+  {
+   "fieldname": "sponsors",
+   "fieldtype": "Table",
+   "label": "Sponsors",
+   "options": "Sponsors"
+  },
+  {
+   "fieldname": "other_event_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Event details"
+  },
+  {
+   "fieldname": "volunteers_required",
+   "fieldtype": "Select",
+   "label": "Volunteers required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_lvwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_brochure",
+   "fieldtype": "Attach Image",
+   "label": "Event Brochure"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Event creation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 12:32:16.264593",
+ "modified_by": "Administrator",
+ "module": "Project EMS",
+ "name": "Event creation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

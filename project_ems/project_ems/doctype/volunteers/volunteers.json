@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name}-{last_name}-{phone_number}",
+ "creation": "2023-11-17 08:14:42.029017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cmoh",
+  "first_name",
+  "last_name",
+  "phone_number",
+  "address",
+  "column_break_eofj",
+  "gender",
+  "age",
+  "email",
+  "photo",
+  "id_proof",
+  "attach_image_rfcz",
+  "event_details_section",
+  "event_name",
+  "event_location",
+  "column_break_rali",
+  "event_date_and_time",
+  "check_availability",
+  "comments_section",
+  "volunteers_comments_section",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cmoh",
+   "fieldtype": "Section Break",
+   "label": "Personal details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "column_break_eofj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Select",
+   "label": "ID Proof",
+   "options": "Aadhar card\nDriving license\nPan card\nVoter ID"
+  },
+  {
+   "fieldname": "attach_image_rfcz",
+   "fieldtype": "Attach Image",
+   "label": "ID Proof image"
+  },
+  {
+   "fieldname": "event_details_section",
+   "fieldtype": "Section Break",
+   "label": "Event details"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event name"
+  },
+  {
+   "fieldname": "column_break_rali",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Event date and time"
+  },
+  {
+   "fieldname": "event_location",
+   "fieldtype": "Small Text",
+   "label": "Event location"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_availability",
+   "fieldtype": "Check",
+   "label": "Check availability"
+  },
+  {
+   "fieldname": "comments_section",
+   "fieldtype": "Section Break",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "volunteers_comments_section",
+   "fieldtype": "Text",
+   "label": "Volunteers comments section"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Volunteers",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 12:36:08.370790",
+ "modified_by": "Administrator",
+ "module": "Project EMS",
+ "name": "Volunteers",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
